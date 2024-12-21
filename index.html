@@ -1,7 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>HELLO WORLD</h1>
-        <p>I'm hosted with GitHub Pages</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Home</title>
+    <style>
+        div {
+            font-size: 55px;
+            left: 25px;
+            margin-top: 80px;
+            position: fixed;
+        }
+
+        div p {
+            margin: 0;
+        }
+
+        @keyframes slide-in {
+            from { translate: 0 3vh; }
+            to { translate: 0 0; }
+        }
+
+        @keyframes fade-in-main {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        div .main-description {
+            animation: slide-in 0.8s, fade-in 0.8s;
+        }
+
+        @keyframes fade-in-extra {
+            from { opacity: 0; }
+            to { opacity: 0.5; }
+        }
+
+        div .extra-description {
+            animation: slide-in 1s 1s, fade-in-extra 1s 1s forwards;
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p id="header-name">JOEL LUM</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1fecX10kPwMcgyOgBl0LS9K77erZQnlwy/view?usp=sharing" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div>
+        <p class="main-description">Currently</p>
+        <p class="main-description">an undergraduate student</p>
+        <p class="main-description">studying Engineering</p>
+        <p class="main-description">at UNSW.</p>
+
+        <p class="extra-description">Majoring in Software</p>
+        <p class="extra-description">Expected to graduate by 2026</p>
+    </div>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/joel-lum" target="_blank">LinkedIn</a></li>
+            <li><a href="https://www.github.com/joellum1" target="_blank">GitHub</a></li>
+            <li><a href="mailto:joellumzh@gmail.com">Email</a</li>
+        </ul>
+    </footer>
+</body>
 </html>
