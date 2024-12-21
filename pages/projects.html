@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../stylesheet.css">
+    <style>
+        main {
+            padding: 0px 25px 25px 25px;
+        }
+
+        ul.projects {
+            border-radius: 10px;
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        main ul li button {
+            background-color: rgb(74, 92, 106);
+            border-radius: 10px;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        main ul li button {
+            width: 100%;
+        }
+
+        main ul li button img {
+            border-radius: 10px;
+            height: 80vh;
+            margin: 20px 20px 0 20px;
+            object-fit: cover;
+            width: 97%;
+        }
+
+        .project-title {
+            color: white;
+            font-size: 18px;
+            margin: 20px 20px 10px 20px;
+            opacity: 0.5;
+            text-align: left;
+        }
+
+        .project-description {
+            color: white;
+            font-size: 18px;
+            margin: 10px 20px 20px 20px;
+            text-align: left;
+        }
+
+        button {
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p id="header-name">JOEL LUM</p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1fecX10kPwMcgyOgBl0LS9K77erZQnlwy/view?usp=sharing" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="title">Projects</div>
+    
+    <main>
+        <ul class="projects">
+            <li>
+                <button onclick="window.location.href='projects/rl_agent.html';">
+                    <img src="../images/rl.png" alt="robot">
+                    <p class="project-title">Reinforcement Learning Agent</p>
+                    <p class="project-description">Trained agent to search for optimal path to reach goal while avoiding obstacles</p>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <!-- <img src="" alt=""> -->
+                    <p class="project-title">Project 2</p>
+                    <p class="project-description">Project Description</p>
+                </button>
+            </li>
+            <li>
+                <button>
+                    <!-- <img src="" alt=""> -->
+                    <p class="project-title">Project 3</p>
+                    <p class="project-description">Project Description</p>
+                </button>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
