@@ -58,6 +58,15 @@
         button:hover {
             transform: scale(0.98);
         }
+
+        /* RESPONSIVE DESIGN */
+        @media (max-width: 600px) {
+            main ul li button img {
+                height: 25vh;
+                /* margin: 2.2vh 4.8vw 0 4.8vw; */
+                width: 75vw;
+            }
+        }
     </style>
 </head>
 <body>
@@ -80,7 +89,7 @@
                 <button onclick="window.location.href='projects/rl_agent.html';">
                     <img src="../images/rl.png" alt="robot">
                     <p class="project-title">Reinforcement Learning Agent</p>
-                    <p class="project-description">Trained agent to search for optimal path to reach goal while avoiding obstacles</p>
+                    <p class="project-description">Trained agent to search for optimal path to reach goal</p>
                 </button>
             </li>
         </ul>
