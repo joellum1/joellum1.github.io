@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Home</title>
     <style>
-        div {
+        #description-container {
             font-size: 3.8vw;
             left: 25px;
             margin-top: 80px;
             position: fixed;
         }
 
-        div p {
+        #description-container p {
             margin: 0;
         }
 
@@ -28,7 +28,7 @@
             to { opacity: 1; }
         }
 
-        div .main-description {
+        #description-container .main-description {
             animation: slide-in 0.8s, fade-in 0.8s;
         }
 
@@ -37,13 +37,13 @@
             to { opacity: 0.5; }
         }
 
-        div .extra-description {
+        #description-container .extra-description {
             animation: slide-in 1s 1s, fade-in-extra 1s 1s forwards;
             opacity: 0;
         }
 
         @media (max-width: 600px) {
-            div {
+            #description-container {
                 font-size: 6.5vw;
                 margin-top: 22vh;
             }
@@ -53,16 +53,30 @@
 <body>
     <header>
         <p id="header-name">JOEL LUM</p>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/projects.html">Projects</a></li>
-                <li><a href="https://drive.google.com/file/d/12iruOoqELDlbSH7RCN38wYqzHVo6FFwx/view?usp=sharing" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
+
+        <div class="desktop-only">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="https://drive.google.com/file/d/12iruOoqELDlbSH7RCN38wYqzHVo6FFwx/view?usp=sharing" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mobile-only">
+            <nav class="mobile-menu">
+                <button>Menu</button>
+                <ul class="mobile-dropdown-content">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/projects.html">Projects</a></li>
+                    <li><a href="https://drive.google.com/file/d/12iruOoqELDlbSH7RCN38wYqzHVo6FFwx/view?usp=sharing" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div>
+    <div id="description-container">
         <p class="main-description">Currently</p>
         <p class="main-description">an undergraduate student</p>
         <p class="main-description">studying Engineering</p>
