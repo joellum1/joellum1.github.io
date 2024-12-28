@@ -188,8 +188,12 @@ footer ul li {
         width: 100%;
     }
 
+    #project-tag {
+        margin-bottom: 2vh;
+    }
+
     #project-name {
-        margin-bottom: 5vh;
+        margin: 2vh 25px 5vh 25px;
     }
 
     #project-image-container {
