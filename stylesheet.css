@@ -144,6 +144,8 @@ footer ul li {
     color: rgb(155,168,171);
     margin-bottom: 20px;
     opacity: 0.75;
+    font-size: 2.2vh;
+    line-height: 1.4;
 }
 
 #outcomes-container ul li:last-child {
@@ -170,9 +172,16 @@ footer ul li {
     width: 375px;
 }
 
-#project-overview-content {
+#project-overview-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
     margin-top: 50px;
-    width: 100%;
+}
+
+#project-overview-content-container div {
+    font-size: 2.2vh;
+    line-height: 1.5;
     opacity: 0.75;
 }
 
@@ -196,6 +205,10 @@ footer ul li {
         margin: 2vh 25px 5vh 25px;
     }
 
+    #outcomes-container ul li {
+        font-size: 3.4vw;
+    }
+
     #project-image-container {
         height: auto;
         padding: 10px 0 10px 0;
@@ -205,7 +218,7 @@ footer ul li {
         flex-direction: column;
         height: auto;
         padding: 12vw;
-        gap: 4vh;
+        gap: 5vh;
     }
 
     #project-overview-header {
@@ -217,7 +230,12 @@ footer ul li {
         width: 95%;
     }
 
-    #project-overview-content {
+    #project-overview-content-container {
+        gap: 4.5vw;
         margin-top: 0;
+    }
+
+    #project-overview-content-container div {
+        font-size: 3.4vw;
     }
 }
