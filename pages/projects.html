@@ -11,7 +11,8 @@
         }
 
         ul.projects {
-            border-radius: 10px;
+            /* border-radius: 10px;
+            border: solid; */
             list-style-type: none;
             padding: 0;
             text-align: center;
@@ -22,24 +23,25 @@
             border-radius: 10px;
             border: none;
             margin-bottom: 20px;
+            width: 100%;
         }
 
-        main ul li button {
-            width: 100%;
+        .project-list-image-container {
+            display: flex;
+            padding: 20px 20px 20px 20px;
         }
 
         main ul li button img {
             border-radius: 10px;
             height: 80vh;
-            margin: 20px 20px 0 20px;
             object-fit: cover;
-            width: 97%;
+            width: 100%;
         }
 
         .project-title {
             color: white;
             font-size: 18px;
-            margin: 20px 20px 10px 20px;
+            margin: 0 20px 10px 20px;
             opacity: 0.5;
             text-align: left;
         }
@@ -62,9 +64,7 @@
         /* RESPONSIVE DESIGN */
         @media (max-width: 600px) {
             main ul li button img {
-                height: 25vh;
-                /* margin: 2.2vh 4.8vw 0 4.8vw; */
-                width: 74.5vw;
+                height: 20vh;
             }
         }
     </style>
@@ -87,7 +87,9 @@
         <ul class="projects">
             <li>
                 <button onclick="window.location.href='projects/rl_agent.html';">
-                    <img src="../images/rl.png" alt="robot">
+                    <div class="project-list-image-container">
+                        <img src="../images/rl.png" alt="robot">
+                    </div>
                     <p class="project-title">Reinforcement Learning Agent</p>
                     <p class="project-description">Trained agent to search for optimal path to reach goal</p>
                 </button>
