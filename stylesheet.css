@@ -156,7 +156,7 @@ footer ul li {
     gap: 250px;
     height: 200px;
     margin-top: 80px;
-    padding: 65px 65px 65px 65px;
+    padding: 65px;
 }
 
 #project-overview-header {
@@ -197,4 +197,23 @@ footer ul li {
         padding: 10px 0 10px 0;
     }
 
+    #project-overview-container {
+        flex-direction: column;
+        height: auto;
+        padding: 12vw;
+        gap: 4vh;
+    }
+
+    #project-overview-header {
+        margin-bottom: 2vh;
+    }
+
+    #project-overview-title {
+        font-size: 6vw;
+        width: 95%;
+    }
+
+    #project-overview-content {
+        margin-top: 0;
+    }
 }
