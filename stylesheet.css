@@ -77,6 +77,10 @@ nav ul li:last-child {
     .mobile-menu button:hover .mobile-dropdown-content {
         display: block;
     }
+
+    .title {
+        font-size: 10vw;
+    }
 }
 
 /* FOOTER */
