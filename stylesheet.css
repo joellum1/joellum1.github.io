@@ -156,7 +156,7 @@ footer ul li {
     background-color: rgb(28,46,74);
     display: flex;
     gap: 250px;
-    height: 200px;
+    height: auto;
     margin-top: 80px;
     padding: 65px;
 }
@@ -176,7 +176,6 @@ footer ul li {
     display: flex;
     flex-direction: column;
     gap: 4vh;
-    margin-top: 50px;
 }
 
 #project-overview-content-container div {
@@ -216,7 +215,6 @@ footer ul li {
 
     #project-overview-container {
         flex-direction: column;
-        height: auto;
         padding: 12vw;
         gap: 5vh;
     }
@@ -232,7 +230,6 @@ footer ul li {
 
     #project-overview-content-container {
         gap: 4.5vw;
-        margin-top: 0;
     }
 
     #project-overview-content-container div {
