@@ -4,17 +4,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reinforcement Learning Agent</title>
     <link rel="stylesheet" href="../../stylesheet.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <p id="header-name">JOEL LUM</p>
-        <nav>
-            <ul>
-                <li><a href="../../index.html">Home</a></li>
+
+        <div class="desktop-only">
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
                 <li><a href="../projects.html">Projects</a></li>
                 <li><a href="https://drive.google.com/file/d/1fecX10kPwMcgyOgBl0LS9K77erZQnlwy/view?usp=sharing" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="mobile-only">
+            <nav class="mobile-menu">
+                <button id="menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="mobile-dropdown-content">
+                    <li><a href="../../index.html">Home</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="https://drive.google.com/file/d/1fecX10kPwMcgyOgBl0LS9K77erZQnlwy/view?usp=sharing" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
     <div class="project-summary-container">
@@ -55,5 +72,6 @@
             </div>
         </div>
     </div>
+    <script src="../../script.js"></script>
 </body>
 </html>
