@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Home</title>
     <style>
         #description-container {
             font-size: 3.8vw;
             left: 25px;
-            margin-top: 80px;
+            margin-top: 10vh;
             position: fixed;
         }
 
@@ -54,14 +54,6 @@
     <header>
         <p id="header-name">JOEL LUM</p>
 
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/projects.html">Projects</a></li>
-                <li><a href="https://drive.google.com/file/d/12iruOoqELDlbSH7RCN38wYqzHVo6FFwx/view?usp=sharing" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
-
         <div class="desktop-only">
             <nav>
                 <ul>
@@ -74,7 +66,9 @@
 
         <div class="mobile-only">
             <nav class="mobile-menu">
-                <button>Menu</button>
+                <button id="menu-button">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul class="mobile-dropdown-content">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="pages/projects.html">Projects</a></li>
@@ -101,5 +95,6 @@
             <li><a href="mailto:joellumzh@gmail.com">Email</a</li>
         </ul>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
