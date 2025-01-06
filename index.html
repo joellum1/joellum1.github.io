@@ -7,15 +7,43 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Home</title>
     <style>
+        #introduction-container {
+            display: flex;
+            margin: 5vw 1.8vw 0 1.8vw;
+            gap: 5vw;
+        }
+
         #description-container {
             font-size: 3.8vw;
-            left: 25px;
-            margin-top: 10vh;
-            position: fixed;
+            width: 60%;
         }
 
         #description-container p {
             margin: 0;
+        }
+
+        #links-container {
+            margin: 4vw 0 4vw 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #links-container ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #links-container ul li {
+            padding: 1vw 2vw 1vw 2vw;
+            font-size: 1.5vw;
+        }
+
+        .logo {
+            width: 2vw;
+            height: 2vw;
+            object-fit: contain;
+            border-radius: 5px;
         }
 
         @keyframes slide-in {
@@ -42,10 +70,53 @@
             opacity: 0;
         }
 
+        /* TABLET VIEW */
         @media (max-width: 768px) {
+            #introduction-container {
+                display: flexbox;
+                flex-direction: column;
+                margin: 5vw 2vw 0 2vw;
+            }
+
+            #description-container {
+                font-size: 30px;
+                width: 100%;
+            }
+
+            #links-container {
+                margin: 0;
+            }
+
+            #links-container ul li{
+                display: inline;
+                font-size: 1.8vw;
+            }
+        }
+
+        /* PHONE VIEW */
+        @media (max-width: 425px) {
+            #header-name {
+                font-size: 3vw;
+                margin-left: 5vw;
+            }
+
+            #introduction-container {
+                display: flexbox;
+                flex-direction: column;
+                margin: 12vw 5vw 0 5vw;
+                gap: 10vw;
+            }
+
             #description-container {
                 font-size: 6.5vw;
-                margin-top: 22vh;
+            }
+
+            #links-container {
+                margin: 0;
+            }
+
+            #links-container ul li{
+                font-size: 3vw;
             }
         }
     </style>
@@ -78,16 +149,35 @@
         </div>
     </header>
 
-    <div id="description-container">
-        <p class="main-description">Currently</p>
-        <p class="main-description">an undergraduate student</p>
-        <p class="main-description">studying Engineering</p>
-        <p class="main-description">at UNSW.</p>
-
-        <p class="extra-description">Majoring in Software</p>
-        <p class="extra-description">Expected to graduate by 2026</p>
+    <div id="introduction-container">
+        <div id="description-container">
+            <p class="main-description">Currently</p>
+            <p class="main-description">an undergraduate student</p>
+            <p class="main-description">studying Engineering</p>
+            <p class="main-description">at UNSW.</p>
+    
+            <p class="extra-description">Majoring in Software</p>
+            <p class="extra-description">Expected to graduate by 2026</p>
+        </div>
+    
+        <!-- <div id="links-container">
+            <ul>
+                <li>
+                    <img class="logo" src="images/github.jpeg" alt="Github Logo">
+                    <a href="https://www.github.com/joellum1" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <img class="logo" src="images/linkedin.png" alt="LinkedIn Logo">
+                    <a href="https://www.linkedin.com/in/joel-lum" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <img class="logo" src="images/document.png" alt="Resume Logo">
+                    <a href="https://drive.google.com/file/d/12iruOoqELDlbSH7RCN38wYqzHVo6FFwx/view?usp=sharing" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </div> -->
     </div>
-
+    
     <footer>
         <ul>
             <li><a href="https://www.linkedin.com/in/joel-lum" target="_blank">LinkedIn</a></li>
