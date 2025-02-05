@@ -153,6 +153,7 @@ footer ul li {
     height: 450px;
     padding-bottom: 15px;
     width: 725px;
+    height: auto;
 }
 
 #project-tag {
@@ -173,7 +174,7 @@ footer ul li {
     background-color: rgb(209,207,201);
     border-radius: 10px;
     display: flex;
-    height: 450px;
+    height: auto;
     justify-content: center;
     width: 100%;
 }
